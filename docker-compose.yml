@@ -1,0 +1,8 @@
+version: '3'
+services:
+  ocap:
+    image: kadashy/docker-ansible:latest
+    container_name: ocap
+    command: "tail -f /dev/null"
+    volumes:
+      - ./ansible:/etc/ansible
